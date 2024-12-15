@@ -5,7 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:test_project/viewmodel/onboarding_viewmodel.dart';
 
 import '../utils/onboardning_component.dart';
-import '../utils/sharedpreference.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -19,7 +18,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   void initState() {
     super.initState();
   }
-  OnboardingViewModelProvider _provider =  OnboardingViewModelProvider();
+  final OnboardingViewModelProvider _provider =  OnboardingViewModelProvider();
 
   @override
   Widget build(BuildContext context) {

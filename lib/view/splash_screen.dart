@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-import '../res/widgets/app_colors.dart';
 import '../utils/sharedpreference.dart';
 import '../viewmodel/splash_service.dart';
 

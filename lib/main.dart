@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:test_project/res/widgets/app_colors.dart';
 import 'package:test_project/utils/routes/route_names.dart';
 import 'package:test_project/utils/routes/routes.dart';
-import 'package:test_project/utils/sharedpreference.dart';
 import 'package:test_project/view/splash_screen.dart';
 import 'package:test_project/viewmodel/login_view_model.dart';
 import 'package:test_project/viewmodel/onboarding_viewmodel.dart';

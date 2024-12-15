@@ -12,11 +12,9 @@ class SplashService {
       await Future.delayed(const Duration(seconds: 3));
       bool firstRun = await IsFirstRun.isFirstRun();
       if( firstRun){
-        print("firstrun - true");
         Navigator.pushNamed(context, RouteNames.onboardingScreen);
       }else
         {
-          print("firstrun - false");
           if( isLoggedIn ){
             _initializeFirebase(context);
 

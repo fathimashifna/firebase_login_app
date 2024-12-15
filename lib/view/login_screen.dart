@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:insta_login/insta_view.dart';
 import 'package:provider/provider.dart';
 import 'package:test_project/view/home_screen.dart';
 import 'package:test_project/view/register_screen.dart';
@@ -25,7 +24,6 @@ class _LoginScreenState extends State<LoginScreen> {
   TextEditingController? _password;
   final _focusEmail = FocusNode();
   final _focusPassword = FocusNode();
-  bool _isLoading = false;
 
 
   @override
@@ -33,7 +31,6 @@ class _LoginScreenState extends State<LoginScreen> {
     super.initState();
     _email = TextEditingController(text: "");
     _password = TextEditingController(text: "");
-    _isLoading = _loginViewModel.isloading;
   }
 
   final LoginViewModel _loginViewModel = LoginViewModel();

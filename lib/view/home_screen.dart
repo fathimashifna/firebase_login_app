@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,7 +10,7 @@ import '../utils/sharedpreference.dart';
 class HomeScreen extends StatefulWidget {
   final User? user;
 
-  HomeScreen(this.user);
+  const HomeScreen(this.user, {super.key});
 
   @override
   State<StatefulWidget> createState() => _HomeScreenState();
@@ -83,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding:
                     const EdgeInsets.symmetric(horizontal: 24.0, vertical: 10.0),
                     child: Text(
-                      '${widget.user!.displayName.toString()}',
+                      widget.user!.displayName.toString(),
                       style: GoogleFonts.inter(
                           fontSize: 18.0, color: AppColors.color_text),
                     ),
@@ -108,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding:
                   const EdgeInsets.symmetric(horizontal: 24.0, vertical: 10.0),
                   child: Text(
-                    '${widget.user!.email.toString()}',
+                    widget.user!.email.toString(),
                     style: GoogleFonts.inter(
                         fontSize: 18.0, color: AppColors.color_text),
                   ),
